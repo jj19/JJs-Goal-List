@@ -1,0 +1,72 @@
+body{
+  background-color: #f4f4f4;
+}
+p, span{
+  font-family: Rubik, sans-serif;
+}
+
+.thin-font{
+  font-weight: 300;
+}
+
+.topHeader{
+  background: linear-gradient(#3ca9f6, #3f87a6);
+  color: white;
+  border-radius: 5px;
+  padding: 0px 0px 15px 15px;
+  border: #467caf 2px solid; 
+}
+
+.title{
+font-family: 'Secular One', sans-serif;
+}
+
+.actionArea{
+  display: flex;
+  padding-top: 30px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.goalAction {
+  padding: 5px 10px;
+  border: #3ca9f6 2px solid;
+  border-radius: 5px;
+}
+
+.goalSubmit{
+  color: white;
+  font-family: Rubik, sans-serif;
+  background: #3ca9f6;
+  border: gray 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.list, .completedList{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 10px 30px 10px ;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border: #f4f4f4 2px solid;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.goalItem{
+  display:flex;
+  flex-direction: row;
+  border-bottom: gray 1px solid;
+  list-style: none;
+  padding: 10px 15px;
+  font-family: Rubik, sans-serif;
+  font-weight: 300;
+
+}
+
+

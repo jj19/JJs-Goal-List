@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JJ's Goal List</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;800&family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/main.css">
+</head>
+<body>
+  <header class="topHeader">
+    <h1 class="title">JJ's Goal List</h1>
+    <span class="thin-font">Here is a list of my current goals as a Sofware Engineer student.</span>
+  </header>
+  <!-- To Do Actions -->
+  <section class="actionArea">
+    <form class="goalForm">
+        <input type="text" class="goalAction" id="goalContent" placeholder="Type your To Do Here">
+        <input class=goalSubmit type="submit" value="Add Goal">
+    </form>
+  </section>
+<!-- To Do List -->
+  <section class="list">
+    <p>My Goals:</p>
+    <ul class="goalList">
+      <li class="goalItem">
+        <label>
+          <input type="checkbox" name="goal" class="goalCheckbox"> Learn JavaScript
+        </label>
+      </li>
+      <li class="goalItem">
+        <label>
+          <input type="checkbox" name="goal" class="goalCheckbox"> Learn React
+        </label>
+      </li>
+      <li class="goalItem">
+        <label>
+          <input type="checkbox" name="goal" class="goalCheckbox"> Complete Freecodecamp.org certifications
+        </label>
+      </li>
+      <li class="goalItem">
+        <label>
+          <input type="checkbox" name="goal" class="goalCheckbox"> Master CSS
+        </label>
+      </li>
+    </ul>  
+  </section>
+  <section class="completedList">
+    <p>Completed Goals:</p>
+    <ul class="completedGoalList">
+      <li class="goalItem">
+        <label>
+          <input type="checkbox" name="goal" class="goalCompletedCheckbox" checked> Learn HTML
+        </label>
+      </li>
+    </ul>  
+  </section>
+  <footer></footer>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
