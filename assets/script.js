@@ -64,10 +64,58 @@ Add new goal function
   
     goalList.appendChild(newGoal);
   }
-    function buttonClick(){
+    
+  
+      function buttonClick(event){
       event.preventDefault();
-      let goalValue = document.querySelector('.goalAction').value;
-      addNewGoal(goalValue);
-      goalValue = " ";
+      let goalValue = document.querySelector('.goalAction');
+      addNewGoal(goalValue.value);
+      goalValue.value = "";
   }
   
+  let goalcheckboxes = document.querySelectorAll(".goalCheckbox");
+let completedGoalsList = document.querySelector('.completedGoalList');
+let myGoalsList = document.querySelector('.goalList');
+// let myGoalItem =  document.querySelectorAll('.goalItem')
+// let myCompletedGoalItem = document.querySelector('.completedGoalItem')
+
+goalcheckboxes.forEach(function(checkbox) {
+  checkbox.addEventListener('change', function() {
+    let listItem = this.closest('.goalItem');
+    let clonedListItem = listItem.cloneNode(true);
+    
+    if (this.checked) {
+      console.log("Checkbox is checked..");
+      completedGoalsList.appendChild(clonedListItem);
+      clonedListItem.classList.add('completedGoalItem');
+      clonedListItem.classList.remove('goalItem')
+      listItem.remove();
+    } else {
+      console.log("Checkbox is not checked..");
+      myGoalsList.appendChild(clonedListItem);
+      // listItem.remove();
+    }
+  });
+});
+
+let completedcheckboxes = document.querySelectorAll('.goalCompletedCheckbox')
+
+completedcheckboxes.forEach(function(checkbox) {
+checkbox.addEventListener('change', function() {
+    let completeItem = this.closest('.completedGoalItem');
+    let clonedCompletedListItem = completeItem.cloneNode(true);
+
+    if (this.checked == false) {
+      console.log("Checkbox is unchecked..");
+      myGoalsList.appendChild(clonedCompletedListItem);
+      clonedListItem.classList.add('goalItem');
+      clonedListItem.classList.remove('completedGoalItem')
+      completeItem.remove();
+    } else {
+      console.log("Checkbox is checked..");
+      completedGoalsList.appendChild(clonedCompletedListItem);
+      
+    }
+  
+});
+});
