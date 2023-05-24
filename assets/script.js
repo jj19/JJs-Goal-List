@@ -98,24 +98,24 @@ goalcheckboxes.forEach(function(checkbox) {
   });
 });
 
-let completedcheckboxes = document.querySelectorAll('.goalCompletedCheckbox')
+// let completedcheckboxes = document.querySelectorAll('.goalCompletedCheckbox')
 
-completedcheckboxes.forEach(function(checkbox) {
-checkbox.addEventListener('change', function() {
-    let completeItem = this.closest('.completedGoalItem');
-    let clonedCompletedListItem = completeItem.cloneNode(true);
+// completedcheckboxes.forEach(function(checkbox) {
+// checkbox.addEventListener('change', function() {
+//     let completeItem = this.closest('.completedGoalItem');
+//     let clonedCompletedListItem = completeItem.cloneNode(true);
 
-    if (this.checked == false) {
-      console.log("Checkbox is unchecked..");
-      myGoalsList.appendChild(clonedCompletedListItem);
-      clonedListItem.classList.add('goalItem');
-      clonedListItem.classList.remove('completedGoalItem')
-      completeItem.remove();
-    } else {
-      console.log("Checkbox is checked..");
-      completedGoalsList.appendChild(clonedCompletedListItem);
+//     if (this.checked == false) {
+//       console.log("Checkbox is unchecked..");
+//       myGoalsList.appendChild(clonedCompletedListItem);
+//       clonedListItem.classList.add('goalItem');
+//       clonedListItem.classList.remove('completedGoalItem')
+//       completeItem.remove();
+//     } else {
+//       console.log("Checkbox is checked..");
+//       completedGoalsList.appendChild(clonedCompletedListItem);
       
-    }
+//     }
   
-});
-});
+// });
+// });
